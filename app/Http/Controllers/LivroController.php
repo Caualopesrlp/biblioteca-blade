@@ -6,14 +6,14 @@ use App\Models\Livro;
 use App\Http\Requests\StoreLivroRequest;
 use App\Http\Requests\UpdateLivroRequest;
 
-class LivroControler extends Controller
+class LivroController extends Controller
 {
     /**
      * Display a listing of the resource.
      */
     public function index()
     {
-        //
+        return view('biblioteca.index');
     }
 
     /**
@@ -21,7 +21,7 @@ class LivroControler extends Controller
      */
     public function create()
     {
-        //
+        return view('biblioteca.create');
     }
 
     /**
@@ -37,7 +37,7 @@ class LivroControler extends Controller
      */
     public function show(Livro $livro)
     {
-        //
+        return view('biblioteca.show');
     }
 
     /**
@@ -45,7 +45,7 @@ class LivroControler extends Controller
      */
     public function edit(Livro $livro)
     {
-        //
+        return view('biblioteca.edit');
     }
 
     /**
