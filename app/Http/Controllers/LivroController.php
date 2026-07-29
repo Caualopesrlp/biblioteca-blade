@@ -13,7 +13,18 @@ class LivroController extends Controller
      */
     public function index()
     {
-        return view('biblioteca.index');
+        $livros = [
+            (object) [
+                'titulo' => 'O Hobbit',
+                'autor' => 'J.R.R Tolkien'
+            ],
+            (object) [
+                'titulo' => '1984',
+                'autor' => 'George Orwell'
+            ]
+        ];
+
+        return view('biblioteca.index', compact('livros'));
     }
 
     /**
