@@ -5,24 +5,23 @@ namespace App\Http\Controllers;
 use App\Models\Livro;
 use App\Http\Requests\StoreLivroRequest;
 use App\Http\Requests\UpdateLivroRequest;
+use App\Services\LivroService;
 
 class LivroController extends Controller
 {
+    private LivroService $livroService;
+
+    public function __construct(LivroService $livroService)
+    {
+        $this->livroService = $livroService;
+    }
+
     /**
      * Display a listing of the resource.
      */
     public function index()
     {
-        $livros = [
-            (object) [
-                'titulo' => 'O Hobbit',
-                'autor' => 'J.R.R Tolkien'
-            ],
-            (object) [
-                'titulo' => '1984',
-                'autor' => 'George Orwell'
-            ]
-        ];
+        $livros = $this->livroService->listar();
 
         return view('biblioteca.index', compact('livros'));
     }
