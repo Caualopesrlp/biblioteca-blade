@@ -234,3 +234,79 @@ main {
 .botoesLivro a:hover {
     background-color: var(--cor-primaria-hover);
 }
+
+.botao-create button {
+    border: none;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+
+    width: 160px;
+    height: 40px;
+
+    background-color: var(--cor-primaria);
+    color: white;
+
+    border-radius: var(--radius);
+    text-decoration: none;
+    font-weight: bold;
+
+    transition: var(--transition);
+}
+
+.botao-create button:hover {
+    background-color: var(--cor-primaria-hover);
+}
+
+.formulario-cadastro-livro {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    padding: 20px;
+
+    background-color: var(--cor-superficie);
+
+    border: 1px solid var(--cor-borda);
+    border-radius: var(--radius);
+
+    box-shadow: var(--sombra);
+
+    
+}
+
+.formulario-cadastro-livro label {
+    font-weight: bold;
+    color: var(--cor-texto);
+}
+
+.formulario-cadastro-livro input,
+.formulario-cadastro-livro select,
+.formulario-cadastro-livro textarea {
+    width: 100%;
+
+    padding: 10px;
+
+    border: 1px solid var(--cor-borda);
+    border-radius: var(--radius);
+
+    font-size: 1rem;
+
+    background-color: var(--cor-superficie);
+
+    transition: var(--transition);
+}
+
+.formulario-cadastro-livro input:focus,
+.formulario-cadastro-livro select:focus,
+.formulario-cadastro-livro textarea:focus {
+    outline: none;
+    border-color: var(--cor-primaria);
+    box-shadow: 0 0 6px rgba(107, 79, 59, 0.2);
+}
+
+.formulario-cadastro-livro textarea {
+    resize: none;
+}
+
+
