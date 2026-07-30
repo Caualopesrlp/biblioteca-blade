@@ -156,8 +156,80 @@ main {
     background-color: var(--cor-primaria-hover);
 }
 
-.botaoIntroducao a{
+.botaoIntroducao a {
     text-decoration: none;
     color: white;
 }
 
+/* =========================
+   CARDS DE LIVROS
+========================= */
+
+.card-livro {
+    width: 300px;
+
+    background-color: var(--cor-superficie);
+    padding: 20px;
+
+    border: 1px solid var(--cor-borda);
+    border-radius: var(--radius);
+
+    box-shadow: var(--sombra);
+
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+
+    transition: var(--transition);
+}
+
+.card-livro:hover {
+    transform: translateY(-5px);
+}
+
+
+/* Título do livro */
+
+.card-livro h3 {
+    color: var(--cor-texto);
+}
+
+
+/* Informações */
+
+.card-livro p {
+    color: var(--cor-texto-secundario);
+}
+
+
+/* Botões */
+
+.botoesLivro {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+
+.botoesLivro a {
+    flex: 1;
+
+    text-align: center;
+
+    padding: 8px 12px;
+
+    background-color: var(--cor-primaria);
+    color: white;
+
+    border-radius: var(--radius);
+
+    text-decoration: none;
+    font-weight: bold;
+
+    transition: var(--transition);
+}
+
+
+.botoesLivro a:hover {
+    background-color: var(--cor-primaria-hover);
+}
