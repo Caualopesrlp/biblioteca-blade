@@ -17,4 +17,9 @@ class LivroService
     {
         return $this->livroRepository->listar();
     }
+
+    public function criar(array $dados)
+    {
+        return $this->livroRepository->criar($dados);
+    }
 }

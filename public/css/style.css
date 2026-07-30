@@ -272,7 +272,7 @@ main {
 
     box-shadow: var(--sombra);
 
-    
+
 }
 
 .formulario-cadastro-livro label {
@@ -309,4 +309,7 @@ main {
     resize: none;
 }
 
-
+.erro {
+    color: var(--cor-perigo);
+    font-size: 0.9rem;
+}

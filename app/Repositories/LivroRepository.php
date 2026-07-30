@@ -18,4 +18,9 @@ class LivroRepository
     {
         return Livro::all();
     }
+
+    public function criar(array $dados)
+    {
+        return Livro::create($dados);
+    }
 }

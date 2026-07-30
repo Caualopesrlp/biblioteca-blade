@@ -39,7 +39,11 @@ class LivroController extends Controller
      */
     public function store(StoreLivroRequest $request)
     {
-        //
+        $dados = $request->validated();
+
+        $this->livroService->criar($dados);
+
+        return redirect(route('livros.index'));
     }
 
     /**
