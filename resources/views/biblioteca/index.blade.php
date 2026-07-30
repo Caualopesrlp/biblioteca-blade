@@ -13,15 +13,22 @@
 
     </div>
 
-    @forelse ($livros as $livro)
-        <div class="card-livro">
-            <h3>{{ $livro->titulo }}</h3>
-            <p>{{ $livro->autor }}</p>
-        </div>
+    <div class="listaLivros">
+        @forelse ($livros as $livro)
+            <div class="card-livro">
+                <h3>{{ $livro->titulo }}</h3>
+                <p>{{ $livro->autor }}</p>
+                <p>{{ $livro->categoria }}</p>
+                <p>{{ $livro->ano_publicacao }}</p>
+                <div class="botoesLivro">
+                    <a href="{{ route('livros.show', $livro) }}">Ver</a>
+                    <a href="{{ route('livros.edit', $livro) }}">Editar</a>
+                </div>
+            </div>
 
-    @empty
+        @empty
 
-        <p>Nenhum livro cadastrado.</p>
-    @endforelse
-    
+            <p>Nenhum livro cadastrado.</p>
+        @endforelse
+    </div>
 @endsection

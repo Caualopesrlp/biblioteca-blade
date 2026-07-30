@@ -1,0 +1,156 @@
+/* =========================
+   VARIÁVEIS
+========================= */
+
+:root {
+    --cor-primaria: #6B4F3B;
+    --cor-primaria-hover: #5A4131;
+
+    --cor-secundaria: #D4A373;
+
+    --cor-fundo: #EFE7DD;
+    --cor-superficie: #FFFFFF;
+
+    --cor-texto: #2F2F2F;
+    --cor-texto-secundario: #6C757D;
+
+    --cor-borda: #E5E5E5;
+
+    --cor-sucesso: #4F8A5B;
+    --cor-perigo: #C0392B;
+
+    --sombra: 0 4px 12px rgba(0, 0, 0, .08);
+
+    --radius: 10px;
+
+    --transition: .3s ease;
+}
+
+/* =========================
+   RESET
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* =========================
+   LAYOUT GERAL
+========================= */
+
+body {
+    min-height: 100vh;
+    background-color: var(--cor-fundo);
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* =========================
+   NAVBAR
+========================= */
+
+.navbar {
+    background-color: var(--cor-primaria);
+    margin-bottom: 20px;
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 60px;
+}
+
+.navbar a {
+    color: var(--cor-fundo);
+    text-decoration: none;
+    transition: var(--transition);
+}
+
+.navbar a:hover {
+    color: var(--cor-secundaria);
+
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+.footer {
+    background-color: var(--cor-primaria);
+    color: var(--cor-fundo);
+}
+
+.footer .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 40px;
+}
+
+/* =========================
+   PÁGINA INDEX
+========================= */
+
+.introducao {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.textoIntroducao {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.listaLivros {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.card-livro {
+    width: 300px;
+}
+
+.botaoIntroducao {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 160px;
+    height: 40px;
+
+    background-color: var(--cor-primaria);
+    color: white;
+
+    border-radius: var(--radius);
+    text-decoration: none;
+    font-weight: bold;
+
+    transition: var(--transition);
+}
+
+.botaoIntroducao:hover {
+    background-color: var(--cor-primaria-hover);
+}
+
+.botaoIntroducao a{
+    text-decoration: none;
+    color: white;
+}
+
