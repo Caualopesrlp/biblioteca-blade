@@ -313,3 +313,27 @@ main {
     color: var(--cor-perigo);
     font-size: 0.9rem;
 }
+
+.botoesLivro form {
+    flex: 1;
+}
+
+.botao-deletar {
+    width: 100%;
+    padding: 8px 12px;
+
+    background-color: var(--cor-perigo);
+    color: white;
+
+    border: none;
+    border-radius: var(--radius);
+
+    font-weight: bold;
+    cursor: pointer;
+
+    transition: var(--transition);
+}
+
+.botao-deletar {
+    flex: 1;
+}

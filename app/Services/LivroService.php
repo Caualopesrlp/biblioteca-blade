@@ -28,4 +28,9 @@ class LivroService
     {
         return $this->livroRepository->editar($dados, $livro);
     }
+
+    public function deletar(Livro $livro)
+    {
+        return $this->livroRepository->deletar($livro);
+    }
 }

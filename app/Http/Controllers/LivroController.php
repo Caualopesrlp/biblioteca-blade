@@ -6,6 +6,7 @@ use App\Models\Livro;
 use App\Http\Requests\StoreLivroRequest;
 use App\Http\Requests\UpdateLivroRequest;
 use App\Services\LivroService;
+use Illuminate\Support\Facades\Redirect;
 
 class LivroController extends Controller
 {
@@ -79,6 +80,8 @@ class LivroController extends Controller
      */
     public function destroy(Livro $livro)
     {
-        //
+        $this->livroService->deletar($livro);
+
+        return redirect(route('livros.index'));
     }
 }

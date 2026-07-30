@@ -23,6 +23,14 @@
                 <div class="botoesLivro">
                     <a href="{{ route('livros.show', $livro) }}">Ver</a>
                     <a href="{{ route('livros.edit', $livro) }}">Editar</a>
+                    <form action="{{ route('livros.destroy', $livro) }}" method="POST">
+                        @csrf
+                        @method('DELETE')
+
+                        <button class="botao-deletar" type="submit">
+                            Deletar
+                        </button>
+                    </form>
                 </div>
             </div>
 

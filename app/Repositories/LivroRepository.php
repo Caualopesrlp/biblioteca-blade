@@ -30,5 +30,10 @@ class LivroRepository
 
         return $livro;
     }
+
+    public function deletar(Livro $livro)
+    {
+        return $livro->delete();
+    }
 }
 
