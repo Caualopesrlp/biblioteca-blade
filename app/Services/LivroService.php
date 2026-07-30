@@ -2,6 +2,7 @@
 
 namespace App\Services;
 
+use App\Models\Livro;
 use App\Repositories\LivroRepository;
 
 class LivroService
@@ -21,5 +22,10 @@ class LivroService
     public function criar(array $dados)
     {
         return $this->livroRepository->criar($dados);
+    }
+
+    public function editar(array $dados, Livro $livro)
+    {
+        return $this->livroRepository->editar($dados, $livro);
     }
 }

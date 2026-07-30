@@ -59,7 +59,7 @@ class LivroController extends Controller
      */
     public function edit(Livro $livro)
     {
-        return view('biblioteca.edit');
+        return view('biblioteca.edit', compact('livro'));
     }
 
     /**
@@ -67,7 +67,11 @@ class LivroController extends Controller
      */
     public function update(UpdateLivroRequest $request, Livro $livro)
     {
-        //
+        $dados = $request->validated();
+
+        $this->livroService->editar($dados, $livro);
+
+        return redirect(route('livros.index'));
     }
 
     /**

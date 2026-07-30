@@ -23,4 +23,12 @@ class LivroRepository
     {
         return Livro::create($dados);
     }
+
+    public function editar(array $dados, Livro $livro)
+    {
+        $livro->update($dados);
+
+        return $livro;
+    }
 }
+
