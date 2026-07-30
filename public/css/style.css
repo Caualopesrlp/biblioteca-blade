@@ -65,6 +65,7 @@ main {
 .navbar {
     background-color: var(--cor-primaria);
     margin-bottom: 20px;
+
 }
 
 .navbar .container {
@@ -72,6 +73,7 @@ main {
     justify-content: space-between;
     align-items: center;
     min-height: 60px;
+
 }
 
 .navbar a {
@@ -83,6 +85,11 @@ main {
 .navbar a:hover {
     color: var(--cor-secundaria);
 
+}
+
+.links-nav {
+    display: flex;
+    gap: 20px;
 }
 
 /* =========================

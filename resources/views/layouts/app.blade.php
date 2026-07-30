@@ -14,7 +14,17 @@
     <nav class="navbar">
         <div class="container">
 
-            <a href="{{route('livros.index')}}">Biblioteca</a>
+            <a href="{{ route('livros.index') }}">Biblioteca</a>
+
+            <div class="links-nav">
+                <a href="https://github.com/Caualopesrlp" target="_blank">
+                    GitHub
+                </a>
+
+                <a href="https://www.linkedin.com/in/caualopesrlp/" target="_blank">
+                    LinkedIn
+                </a>
+            </div>
 
         </div>
     </nav>
