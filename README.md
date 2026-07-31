@@ -95,7 +95,8 @@ Essa abordagem foi utilizada para manter o código mais organizado e facilitar f
 
 ## 📸 Preview
 
-*(Adicionar imagens do projeto futuramente)*
+<img width="1364" height="626" alt="Screenshot_1" src="https://github.com/user-attachments/assets/c6f423d2-8f04-40bc-aa94-217f6eb777d4" />
+
 
 ---
 
