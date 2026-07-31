@@ -26,6 +26,7 @@
     --transition: .3s ease;
 }
 
+
 /* =========================
    RESET
 ========================= */
@@ -35,6 +36,7 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 
 /* =========================
    LAYOUT GERAL
@@ -58,6 +60,7 @@ main {
     margin: 0 auto;
 }
 
+
 /* =========================
    NAVBAR
 ========================= */
@@ -65,7 +68,6 @@ main {
 .navbar {
     background-color: var(--cor-primaria);
     margin-bottom: 20px;
-
 }
 
 .navbar .container {
@@ -73,7 +75,6 @@ main {
     justify-content: space-between;
     align-items: center;
     min-height: 60px;
-
 }
 
 .navbar a {
@@ -84,13 +85,13 @@ main {
 
 .navbar a:hover {
     color: var(--cor-secundaria);
-
 }
 
 .links-nav {
     display: flex;
     gap: 20px;
 }
+
 
 /* =========================
    FOOTER
@@ -109,8 +110,9 @@ main {
     min-height: 40px;
 }
 
+
 /* =========================
-   PÁGINA INDEX
+   INTRODUÇÃO
 ========================= */
 
 .introducao {
@@ -125,15 +127,10 @@ main {
     gap: 10px;
 }
 
-.listaLivros {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-}
 
-.card-livro {
-    width: 300px;
-}
+/* =========================
+   BOTÃO CADASTRAR
+========================= */
 
 .botaoIntroducao {
     display: flex;
@@ -162,14 +159,23 @@ main {
     color: white;
 }
 
+
 /* =========================
-   CARDS DE LIVROS
+   LISTA E CARDS
 ========================= */
+
+.listaLivros {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
 
 .card-livro {
     width: 300px;
 
     background-color: var(--cor-superficie);
+
     padding: 20px;
 
     border: 1px solid var(--cor-borda);
@@ -189,28 +195,25 @@ main {
 }
 
 
-/* Título do livro */
-
 .card-livro h3 {
     color: var(--cor-texto);
 }
 
-
-/* Informações */
 
 .card-livro p {
     color: var(--cor-texto-secundario);
 }
 
 
-/* Botões */
+/* =========================
+   BOTÕES DOS CARDS
+========================= */
 
 .botoesLivro {
     display: flex;
     gap: 10px;
     margin-top: 10px;
 }
-
 
 .botoesLivro a {
     flex: 1;
@@ -230,37 +233,43 @@ main {
     transition: var(--transition);
 }
 
-
 .botoesLivro a:hover {
     background-color: var(--cor-primaria-hover);
 }
 
-.botao-create button {
-    border: none;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
 
-    width: 160px;
-    height: 40px;
+.botoesLivro form {
+    flex: 1;
+}
 
-    background-color: var(--cor-primaria);
+
+.botao-deletar {
+    width: 100%;
+    padding: 8px 12px;
+
+    background-color: var(--cor-perigo);
+
     color: white;
 
+    border: none;
     border-radius: var(--radius);
-    text-decoration: none;
+
     font-weight: bold;
+    cursor: pointer;
 
     transition: var(--transition);
 }
 
-.botao-create button:hover {
-    background-color: var(--cor-primaria-hover);
-}
+
+/* =========================
+   FORMULÁRIOS
+========================= */
 
 .formulario-cadastro-livro {
+
     display: flex;
     flex-direction: column;
+
     gap: 20px;
 
     padding: 20px;
@@ -271,23 +280,25 @@ main {
     border-radius: var(--radius);
 
     box-shadow: var(--sombra);
-
-
 }
+
 
 .formulario-cadastro-livro label {
     font-weight: bold;
     color: var(--cor-texto);
 }
 
+
 .formulario-cadastro-livro input,
 .formulario-cadastro-livro select,
 .formulario-cadastro-livro textarea {
+
     width: 100%;
 
     padding: 10px;
 
     border: 1px solid var(--cor-borda);
+
     border-radius: var(--radius);
 
     font-size: 1rem;
@@ -297,75 +308,103 @@ main {
     transition: var(--transition);
 }
 
+
 .formulario-cadastro-livro input:focus,
 .formulario-cadastro-livro select:focus,
 .formulario-cadastro-livro textarea:focus {
+
     outline: none;
+
     border-color: var(--cor-primaria);
+
     box-shadow: 0 0 6px rgba(107, 79, 59, 0.2);
 }
+
 
 .formulario-cadastro-livro textarea {
     resize: none;
 }
+
 
 .erro {
     color: var(--cor-perigo);
     font-size: 0.9rem;
 }
 
-.botoesLivro form {
-    flex: 1;
-}
 
-.botao-deletar {
-    width: 100%;
-    padding: 8px 12px;
-
-    background-color: var(--cor-perigo);
-    color: white;
+.botao-create button {
 
     border: none;
+
+    cursor: pointer;
+
+    width: 160px;
+    height: 40px;
+
+    background-color: var(--cor-primaria);
+
+    color: white;
+
     border-radius: var(--radius);
 
     font-weight: bold;
-    cursor: pointer;
 
     transition: var(--transition);
 }
 
-.botao-deletar {
-    flex: 1;
+
+.botao-create button:hover {
+    background-color: var(--cor-primaria-hover);
 }
 
+
+/* =========================
+   SHOW
+========================= */
+
 .card-detalhes {
+
+    max-width: 600px;
+
     background-color: var(--cor-superficie);
+
     padding: 20px;
+
     border-radius: var(--radius);
+
     border: 1px solid var(--cor-borda);
+
     box-shadow: var(--sombra);
 
     display: flex;
     flex-direction: column;
+
     gap: 20px;
 }
+
 
 .botoes-card-detalhes {
+
     display: flex;
+
     gap: 20px;
 }
 
+
 .botoes-card-detalhes a {
+
     text-align: center;
 
     padding: 8px 12px;
 
     background-color: var(--cor-primaria);
+
     color: white;
 
     border-radius: var(--radius);
 
     text-decoration: none;
+
     font-weight: bold;
 
     transition: var(--transition);
@@ -373,14 +412,115 @@ main {
 
 
 .botoes-card-detalhes a:hover {
+
     background-color: var(--cor-primaria-hover);
 }
 
-.botoes-edit-blade {
-    display: flex;
-    gap: 20px;
+
+/* =========================
+   TABLET
+========================= */
+
+@media(max-width:900px) {
+
+    .listaLivros {
+        justify-content: center;
+    }
+
 }
 
-.card-detalhes {
-    max-width: 600px;
+
+/* =========================
+   MOBILE
+========================= */
+
+@media(max-width:600px) {
+
+
+    .container {
+        width: 95%;
+    }
+
+
+    .navbar .container {
+
+        flex-direction: column;
+
+        gap: 15px;
+
+        padding: 15px 0;
+
+    }
+
+
+    .links-nav {
+
+        gap: 10px;
+
+    }
+
+
+    .introducao {
+
+        flex-direction: column;
+
+        gap: 20px;
+
+    }
+
+
+    .botaoIntroducao {
+
+        width: 100%;
+
+        max-width: 300px;
+
+    }
+
+
+    .listaLivros {
+
+        flex-direction: column;
+
+        align-items: center;
+
+    }
+
+
+    .card-livro {
+
+        width: 100%;
+
+        max-width: 300px;
+
+    }
+
+
+    .botoesLivro {
+
+        flex-direction: column;
+
+    }
+
+
+    .botoes-card-detalhes {
+
+        flex-direction: column;
+
+    }
+
+
+    .card-detalhes {
+
+        width: 100%;
+
+    }
+
+
+    .botao-create button {
+
+        width: 100%;
+
+    }
+
 }
