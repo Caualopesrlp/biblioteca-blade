@@ -1,59 +1,108 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+# 📚 Biblioteca Blade - Laravel
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+Projeto desenvolvido para praticar a construção de interfaces utilizando **Blade**, o sistema de templates do Laravel.
 
-## About Laravel
+O objetivo principal foi explorar a camada de apresentação do Laravel, trabalhando com views, layouts, formulários, validações e a integração entre Front-end e Back-end dentro da estrutura MVC.
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+---
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+## 🚀 Objetivo
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+Este projeto foi criado com foco em aprendizado, principalmente nos seguintes conceitos:
 
-## Learning Laravel
+* Utilização do Blade Template Engine;
+* Criação de layouts reutilizáveis;
+* Organização de views;
+* Construção e validação de formulários;
+* Integração entre Controllers, Services, Repositories e Models;
+* Estilização de interfaces com HTML e CSS.
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework. You can also check out [Laravel Learn](https://laravel.com/learn), where you will be guided through building a modern Laravel application.
+---
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+## 🛠️ Tecnologias utilizadas
 
-## Laravel Sponsors
+* PHP 8.2
+* Laravel 12
+* Blade
+* SQLite
+* HTML5
+* CSS3
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+---
 
-### Premium Partners
+## ✨ Funcionalidades
 
-- **[Vehikl](https://vehikl.com)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Redberry](https://redberry.international/laravel-development)**
-- **[Active Logic](https://activelogic.com)**
+* ✅ Cadastro de livros
+* ✅ Listagem de livros
+* ✅ Visualização de detalhes
+* ✅ Edição de livros
+* ✅ Exclusão de livros
+* ✅ Validação de formulários
+* ✅ Tratamento de erros
+* ✅ Interface responsiva
 
-## Contributing
+---
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+## 🏗️ Estrutura aplicada
 
-## Code of Conduct
+O projeto utiliza uma separação de responsabilidades através de:
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+```
+Controller
+    ↓
+Service
+    ↓
+Repository
+    ↓
+Model
+    ↓
+Database
+```
 
-## Security Vulnerabilities
+Essa abordagem foi utilizada para manter o código mais organizado e facilitar futuras manutenções.
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+---
 
-## License
+## 📚 Conceitos praticados
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+### Blade
+
+* `@extends`
+* `@section`
+* `@yield`
+* `@error`
+* `@forelse`
+* Uso de layouts compartilhados
+
+### Laravel
+
+* Resource Controllers
+* Route Model Binding
+* Form Requests
+* Eloquent ORM
+* Migrations
+* Seeders
+* Dependency Injection
+
+### Front-end
+
+* HTML semântico
+* CSS organizado
+* Variáveis CSS
+* Responsividade
+
+---
+
+## 📸 Preview
+
+*(Adicionar imagens do projeto futuramente)*
+
+---
+
+## 📌 Observação
+
+Este projeto foi desenvolvido exclusivamente para fins de estudo, com o objetivo de consolidar conhecimentos em Laravel Blade e boas práticas de organização de código.
+
+---
+
+Desenvolvido durante minha evolução no estudo de Laravel.
