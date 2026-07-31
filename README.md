@@ -106,4 +106,4 @@ Este projeto foi desenvolvido exclusivamente para fins de estudo, com o objetivo
 
 ---
 
-Desenvolvido durante minha evolução no estudo de Laravel.
+Desenvolvido durante o estudo do meu roadmap de Laravel.
