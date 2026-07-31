@@ -52,7 +52,8 @@
                     Mistério
                 </option>
 
-                <option value="Ficção Científica" {{ old('categoria', $livro->categoria) == 'Ficção Científica' ? 'selected' : '' }}>
+                <option value="Ficção Científica"
+                    {{ old('categoria', $livro->categoria) == 'Ficção Científica' ? 'selected' : '' }}>
                     Ficção Científica
                 </option>
 
@@ -80,10 +81,16 @@
                 <span class="erro">{{ $message }}</span>
             @enderror
 
+            <div class="botoes-edit-blade">
+                <div class="botao-create">
+                    <button type="submit">Atualizar Livro</button>
+                </div>
 
-            <div class="botao-create">
-                <button type="submit">Atualizar Livro</button>
+                <div class="botoes-card-detalhes">
+                    <a href="{{ route('livros.index') }}">Voltar</a>
+                </div>
             </div>
+
 
         </div>
 

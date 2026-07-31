@@ -337,3 +337,50 @@ main {
 .botao-deletar {
     flex: 1;
 }
+
+.card-detalhes {
+    background-color: var(--cor-superficie);
+    padding: 20px;
+    border-radius: var(--radius);
+    border: 1px solid var(--cor-borda);
+    box-shadow: var(--sombra);
+
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.botoes-card-detalhes {
+    display: flex;
+    gap: 20px;
+}
+
+.botoes-card-detalhes a {
+    text-align: center;
+
+    padding: 8px 12px;
+
+    background-color: var(--cor-primaria);
+    color: white;
+
+    border-radius: var(--radius);
+
+    text-decoration: none;
+    font-weight: bold;
+
+    transition: var(--transition);
+}
+
+
+.botoes-card-detalhes a:hover {
+    background-color: var(--cor-primaria-hover);
+}
+
+.botoes-edit-blade {
+    display: flex;
+    gap: 20px;
+}
+
+.card-detalhes {
+    max-width: 600px;
+}
