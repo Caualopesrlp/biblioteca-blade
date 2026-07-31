@@ -52,7 +52,7 @@ class LivroController extends Controller
      */
     public function show(Livro $livro)
     {
-        return view('biblioteca.show');
+        return view('biblioteca.show', compact('livro'));
     }
 
     /**
